@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tampilan Roles dan Users</title>
+    <style>
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tampilan Roles</h1>
+    <table>
+        <tr>
+            <th>IdRole (PK)</th>
+            <th>NamaRole</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Admin</td>
+            <td>Administrator</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>User</td>
+            <td>Pengguna biasa</td>
+        </tr>
+    </table>
+
+    <h1>Tampilan Users</h1>
+    <table>
+        <tr>
+            <th>IdUser (PK)</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>NamaDepan</th>
+            <th>NamaBelakang</th>
+            <th>TglLahir</th>
+            <th>Alamat</th>
+            <th>IdRole (FK)</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Bryan</td>
+            <td>********</td>
+            <td>Bryan</td>
+            <td>Bryan</td>
+            <td>2001-06-30</td>
+            <td>Bogor</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Samsul</td>
+            <td>********</td>
+            <td>Samsul</td>
+            <td>Samsul</td>
+            <td>2000-06-20</td>
+            <td>Jakarta</td>
+            <td>2</td>
+        </tr>
+    </table>
+</body>
+</html>
